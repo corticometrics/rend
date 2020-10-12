@@ -27,14 +27,14 @@ Some notes on our quilt usage is available in [here](notebooks/quilt.ipynb).
 
 As part of processing, we created JPEGS of each slice of the brain MRI with the segmentation overlaid, as well as interactive HTML files for a 3D view, using [this script](scripts/create_images.py).
 These JPEGS and 3D views are used in creating interactive quality control plots, and were created using [Nilearn](https://nilearn.github.io/)
-An example walking through some steps involved is in this [notebook](notebooks/nilearn.ipynb)
+An example walking through some steps involved is in this [notebook](notebooks/nilearn.ipynb).
 
 ## Interactive plots
 We provide of interactive visualizations of our results.
 
-The first [data_exploration](notebooks/data_exploration.ipynb), contains examples of loading in the results of our FreeSurfer-based analysis, and creating [Altair](https://altair-viz.github.io/) charts directly in the notebook.
+The first notebook, [`data_exploration.ipynb`](notebooks/data_exploration.ipynb), contains examples of loading in the results of our FreeSurfer-based analysis, and creating [Altair](https://altair-viz.github.io/) charts directly in the notebook.
 
-The second and third notebooks ([voila](notebooks/voila.ipynb) and [voila_full](notebooks/voila_full.ipynb)) are notebooks meant to be rendered as [Voila dashboards](https://github.com/voila-dashboards/voila). 
+The second and third notebooks ([`voila.ipynb`](notebooks/voila.ipynb) and [`voila_full.ipynb`](notebooks/voila_full.ipynb)) are notebooks meant to be rendered as [Voila dashboards](https://github.com/voila-dashboards/voila).
 - `voila.ipynb` renders results from the `data_exploration` notebook as a dashboard. 
 - `voila_full.ipynb` is similar to what is rendered at our [demo website](https://viz.corticometrics.com/), where JPEGs and 3D brain viewers are included. Note that this will not work, as the necessary images are not included, but serves as an example of how this can be created.
 
