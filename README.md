@@ -1,5 +1,5 @@
 # Reproducible Exploration of Neuroimaging Data
-This repo will contain code, notebooks and documentation for the talk titled [*Reproducible Exploration of Neuroimaging Data*](https://cfp.jupytercon.com/2020/schedule/presentation/158/reproducible-exploration-of-neuroimaging-data/), to be given at JupyterCon 2020 (October 2020). The neuroimaging visualization dashboard is available [here](https://viz.corticometrics.com/). Slides for the talk are [here](Reproducible_Exploration_of_Neuroimaging_Data.pdf)
+This repo will contain code, notebooks and documentation for the talk titled [*Reproducible Exploration of Neuroimaging Data*](https://cfp.jupytercon.com/2020/schedule/presentation/158/reproducible-exploration-of-neuroimaging-data/), given at JupyterCon 2020 (October 2020). The video of this talk is [here](https://www.youtube.com/watch?v=yXycTif7VmY), and slides are [here](Reproducible_Exploration_of_Neuroimaging_Data.pdf).
 
 Work here is exploratory in nature, and can be use as a guide for implementing similar reproducibility and data visualization pipelines with your own data.
 We are not currently releasing the output data used for the dashboard (though may do so at a later date).
@@ -7,7 +7,7 @@ We are not currently releasing the output data used for the dashboard (though ma
 Our goal is to release an end-to-end interactive dashboard creation tool called [`SurfBoard`](https://github.com/corticometrics/surfboard) to encompass the features in this repo. 
 `SurfBoard` would take commonly produced [FreeSurfer](https://surfer.nmr.mgh.harvard.edu/fswiki) brain MRI segmentation results and create a dashboard like the one linked above for users to examine and quality check results.
 
-Please add any questions or comments as issues to this repo!
+If you have questions or comments, or you're interested in a demo of the neuroimaging visualization dashboard, please leave an issue or reach out to me on Twitter ([@ltirrell_](https://twitter.com/ltirrell_))!
 
 ## Setup
 Code in this repo has been tested using Python 3.6, and should also work with Python 3.7 and 3.8. To setup a virtual environment and install all requirements, run the following commands:
