@@ -68,3 +68,9 @@ After seeing *The Python Visualization Landscape* talk ([slides](https://speaker
 There's also a [Data Visualization Course](https://github.com/uwdata/visualization-curriculum) taught using this package to help learn how to use it.
 
 We found Altair (and the [Vega](https://vega.github.io/vega/) JSON output it is built on) has good support in our Jupyter/Voilà/web based use cases, though there are some minor limitations (such as issues with resizing charts based on browser window size). There was also a learning curve (for us) in getting up to speed in creating charts, compared to the more established matplotlib-based approaches.
+
+## Acknowledgments
+
+This work has been partially funded by the following NIH grants:
+- R42CA183150
+- R42AG062026
