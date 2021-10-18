@@ -16,6 +16,10 @@ python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt 
 ```
+Then to activate your virtual environment in the future you can simply run, from wherever you cloned the repo:
+```
+source venv/bin/activate
+```
 
 ## Data and Analysis Summary
 The [LA5c dataset](https://openneuro.org/datasets/ds000030/versions/1.0.0) was used for the analyses in this repo, and processed with CorticoMetrics' proprietary re:THINQ software (based off of FreeSurfer version 6.0).
@@ -23,12 +27,12 @@ The [LA5c dataset](https://openneuro.org/datasets/ds000030/versions/1.0.0) was u
 [Quilt](https://quiltdata.com/) was used for version control of both input and output data.
 Some notes on our quilt usage is available in [here](notebooks/quilt.ipynb).
 
-As part of processing, we created JPEGS of each slice of the brain MRI with the segmentation overlaid, as well as interactive HTML files for a 3D view, using [this script](scripts/create_images.py).
-These JPEGS and 3D views are used in creating interactive quality control plots, and were created using [Nilearn](https://nilearn.github.io/)
+As part of processing, we created JPEGs of each slice of the brain MRI with the segmentation overlaid, as well as interactive HTML files for a 3D view, using [this script](scripts/create_images.py).
+These JPEGs and 3D views are used in creating interactive quality control plots, and were created using [Nilearn](https://nilearn.github.io/).
 An example walking through some steps involved is in this [notebook](notebooks/nilearn.ipynb).
 
 ## Interactive plots
-We provide of interactive visualizations of our results.
+We provide interactive visualizations of our results.
 
 The first notebook, [`data_exploration.ipynb`](notebooks/data_exploration.ipynb), contains examples of loading in the results of our FreeSurfer-based analysis, and creating [Altair](https://altair-viz.github.io/) charts directly in the notebook.
 
@@ -44,7 +48,7 @@ The dashboard will be available at http://localhost:8866/
 
 ## Description of tools used in this project
 ### Data versioning
-Data versioning is an important and often overlooked part of creating reproducible results(summarized nicely in [this article](https://medium.com/pytorch/how-to-iterate-faster-in-machine-learning-by-versioning-data-and-models-featuring-detectron2-4fd2f9338df5), where a main thesis is `model := script(code, environment, data)`).
+Data versioning is an important and often overlooked part of creating reproducible results (summarized nicely in [this article](https://medium.com/pytorch/how-to-iterate-faster-in-machine-learning-by-versioning-data-and-models-featuring-detectron2-4fd2f9338df5), where a main thesis is `model := script(code, environment, data)`).
 
 We investigated available software packages/platforms for data versioning in May 2020, with an overview of what we found in [this presentation](data_versioning_platforms.pdf).
 
@@ -52,7 +56,7 @@ Based on our use case, Quilt worked out best for us. Our data is already stored 
 Their [docs](https://docs.quiltdata.com/) provide more information on setup, and how to try it out.
 
 Other candidates that we particularly liked are [DVC](https://dvc.org/) and [datalad](https://www.datalad.org/). These treat data more like a part of a Git repo, so it is more closely stored and versioned with your code.
-This may be useful for other projects, but we liked treating data as a separate repository, away from code,
+This may be useful for other projects, but we liked treating data as a separate repository, away from code.
 
 ### Neuroimage viewing within Jupyter
 We decided to use Nilearn for brain viewing within the notebook after being pointed there from a project we used previously called [nbpapaya](https://github.com/akeshavan/nbpapaya).
